@@ -12,9 +12,10 @@ sudo apt install texlive-latex-recommended latexmk texlive-fonts-recommended
 
 ## How to use
 
-In this directory, there is a sample `.latexmkrc` file that gives useful options while using `latexmk`. My PDF viewer of choice is `zathura` but similar PDF viewers could be subsituted too.
+In this directory, there is a sample `.latexmkrc` file that gives useful options while using `latexmk`. My PDF viewer of choice is `zathura` but similar PDF viewers could be substituted too.
 
-Run
+I have encapsulated the functionality necessary to get compile-on-save with in a Makefile. Simply run 
 ```bash
-latexmk -pdf -pvc main.tex
+make
 ```
+And the LaTeX will be compiled to PDF and `zathura` will automatically be opened with compile-on-save functionality.
